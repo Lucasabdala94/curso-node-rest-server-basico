@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "5ed4a32a-3c17-4474-82ea-ade3983ade09",
+		"name": "Cafe-Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"luscas abdala\",\r\n    \"nuevocampo\":false,\r\n    \"correo\": \"lucasabdalas94dsS@gmail.com\",\r\n    \"password\":\"38117303\",\r\n    \"google\":true,\r\n    \"rol\":\"VENTAS_ROLE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/usuarios",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"usuarios"
+					]
+				},
+				"description": "crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"625b28c93048347374d5899d\",\r\n    \"nombre\":\"luscas abdala\",\r\n    \"correo\": \"lucasabdalas94dsS@gmail.com\",\r\n    \"password\":\"38117303\",\r\n    \"google\":true,\r\n    \"rol\":\"ADMIN_ROLE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/usuarios/625b28c93048347374d5899d",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"usuarios",
+						"625b28c93048347374d5899d"
+					]
+				},
+				"description": "crear usuario"
+			},
+			"response": []
+		}
+	]
+}
